@@ -16,6 +16,16 @@ export const sheltersReducer = (state, action) => {
             return {
                 shelters: state.shelters.filter((s) => s._id !== action.payload._id)
                 }
+        case 'UPDATE_SHELTER':
+            return {
+                ...state,
+                shelters: state.shelters.map(shelter => {
+                    if (shelter._id === action.payload._id) {
+                        return action.payload.updatedShelter;
+                    }
+                    return shelter;
+                })
+            };
         default:
             return state
     }

@@ -81,13 +81,16 @@ input {
   box-sizing: border-box;
 }
 form button {
-  background: var(--primary);
+  background: #1aac83;
   border: 0;
   color: #fff;
   padding: 10px;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
+}
+form button:hover{
+  background: #049b70;
 }
 div.error {
   padding: 10px;
@@ -109,4 +112,30 @@ div.error {
 }
 #delete-button:hover {
   background-color: #e60b0b;
+}
+#edit-button {
+  background-color: #e7e1e1; 
+  font-family: "Poppins";
+  color: #11a1f5; 
+  border: none; 
+  border-radius: 4px; 
+  padding: 8px 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  margin-right: 100px;
+}
+#edit-button:hover {
+  background-color: #bebbbb;
+}
+#save-button {
+  background: #1aac83;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+#save-button:hover{
+  background: #049b70;
 }

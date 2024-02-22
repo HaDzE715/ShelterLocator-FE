@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { useSheltersContext } from "../hooks/useSheltersContext";
+import { useState } from 'react';
+import { useSheltersContext } from '../hooks/useSheltersContext';
+import React from 'react';
 
 const ShelterDetails = ({ shelter }) => {
     const { dispatch } = useSheltersContext();
@@ -18,11 +19,11 @@ const ShelterDetails = ({ shelter }) => {
         if(response.ok){
             dispatch({ type: 'DELETE_SHELTER', payload: json });
         }
-    }
+    };
 
     const handleEditClick = async () => {
         setIsEditing(true);
-    }
+    };
 
     const handleSaveClick = async () => {
         try {
@@ -78,7 +79,7 @@ const ShelterDetails = ({ shelter }) => {
                 </>
             )}
         </div>
-    )
-}
+    );
+};
 
 export default ShelterDetails;

@@ -1,5 +1,5 @@
-import { SheltersContext } from '../context/ShelterContext'
-import { useContext } from 'react'
+import { SheltersContext } from '../context/ShelterContext';
+import { useContext } from 'react';
 
 export const useSheltersContext = () => {
     const context = useContext(SheltersContext);
@@ -9,4 +9,4 @@ export const useSheltersContext = () => {
     }
     
     return context;
-}
+};

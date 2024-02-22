@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { useSheltersContext } from '../hooks/useSheltersContext'
+import { useEffect } from 'react';
+import { useSheltersContext } from '../hooks/useSheltersContext';
+import React from 'react';
 
 // components
-import ShelterDetails from '../components/ShelterDetails'
-import ShelterForm from '../components/ShelterForm'
+import ShelterDetails from '../components/ShelterDetails';
+import ShelterForm from '../components/ShelterForm';
 
 const Home = () => {
-    // const [shelters, setShelters] = useState(null);
-    const { shelters, dispatch } = useSheltersContext()
+    const { shelters, dispatch } = useSheltersContext();
 
     useEffect(() => {
         const fetchShelters = async () => {
@@ -18,22 +18,22 @@ const Home = () => {
                 const reversedShelters = json.reverse();
                 dispatch({type: 'SET_SHELTERS', payload: reversedShelters});
             }
-        }
+        };
 
         fetchShelters();
     }, []);
 
 
     return (
-    <div className="home">
-        <div className="shelters">
-            {shelters && shelters.map((shelter) => (
-                <ShelterDetails key={shelter._id} shelter={shelter} />
-            ))}
+        <div className="home">
+            <div className="shelters">
+                {shelters && shelters.map((shelter) => (
+                    <ShelterDetails key={shelter._id} shelter={shelter} />
+                ))}
+            </div>
+            <ShelterForm />
         </div>
-        <ShelterForm />
-    </div>
-    )
-}
+    );
+};
 
 export default Home;

@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { useSheltersContext } from '../hooks/useSheltersContext'
+import { useState } from 'react';
+import { useSheltersContext } from '../hooks/useSheltersContext';
+import React from 'react';
 
 const ShelterForm = () => {
     const { dispatch } = useSheltersContext();
@@ -13,7 +14,7 @@ const ShelterForm = () => {
         e.preventDefault(); // To prevent page from refreshing
 
         if (!Name || !Location || !Capacity) {
-            setError("Name, Location, and Capacity are required");
+            setError('Name, Location, and Capacity are required');
             return;
         }
 
@@ -38,7 +39,7 @@ const ShelterForm = () => {
             setCapacity('');
             setError(null);
             console.log('New shelter added', json);
-            dispatch({type: 'CREATE_SHELTER', payload: json})
+            dispatch({type: 'CREATE_SHELTER', payload: json});
         }
     };
 
@@ -70,7 +71,7 @@ const ShelterForm = () => {
             <button>Add Shelter</button>
             {error && <div className="error">{error}</div>}
         </form>
-    )
-}
+    );
+};
 
-export default ShelterForm
+export default ShelterForm;

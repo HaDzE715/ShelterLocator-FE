@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 const Navbar = () => {
 
@@ -10,7 +11,7 @@ const Navbar = () => {
                 </Link>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

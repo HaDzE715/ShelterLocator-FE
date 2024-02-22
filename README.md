@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Shelter Locator front-end with React
 
 ## Available Scripts
 
@@ -39,32 +37,25 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Enhancements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Implemented state management with Context API and Reducer pattern for centralized state handling.
+2. Enabled CRUD functionality for shelters, allowing creation, reading, updating, and deletion.
+3. Implemented dynamic UI updates to reflect changes in shelters without page refresh.
+4. Implemented error handling mechanisms to provide feedback on API requests and form submissions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Challenges Faced
 
-### Code Splitting
+1. Configuring Context and Reducer required understanding their interaction and structuring state effectively.
+2. Integrating frontend with backend posed challenges in handling asynchronous requests and data flow.
+3. Form validation was challenging, requiring handling various edge cases and providing error messages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How challenges were overcome
 
-### Analyzing the Bundle Size
+1. Thorough research and documentation on React Context API and Reducer pattern.
+2. Effective collaboration with backend developer and debugging API interactions together.
+3. Promoting component reusability and utilizing styling frameworks like Bootstrap for consistent UI styling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

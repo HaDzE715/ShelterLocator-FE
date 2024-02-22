@@ -63,9 +63,12 @@ const ShelterDetails = ({ shelter }) => {
         <div className="shelter-details">
             {isEditing ? (
                 <>
+                    <label>Name: </label>
                     <input type="text" value={editedName} onChange={(e) => setEditedName(e.target.value)} />
+                    <label>Location: </label>
                     <input type="text" value={editedLocation} onChange={(e) => setEditedLocation(e.target.value)} />
-                    <input type="text" value={editedCapacity} onChange={(e) => setEditedCapacity(e.target.value)} />
+                    <label>Capacity: </label>
+                    <input type="number" value={editedCapacity} onChange={(e) => setEditedCapacity(e.target.value)} />
                     <button id="save-button" onClick={handleSaveClick}>Save</button>
                     {error && <div className="error">{error}</div>}
                 </>
